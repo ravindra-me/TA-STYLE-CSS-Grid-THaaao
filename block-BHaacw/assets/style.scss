@@ -1,0 +1,19 @@
+@import "./variable";
+@import "./reset";
+@import "./general";
+@import "./header";
+@import "./main";
+
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 10px;
+    }
+    main {
+        .container{
+            grid-template-rows: repeat(3,1fr);
+            align-items: start;
+            gap: 2rem;
+        }
+    }
+}
