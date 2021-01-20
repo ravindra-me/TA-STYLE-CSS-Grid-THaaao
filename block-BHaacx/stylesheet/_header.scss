@@ -1,0 +1,24 @@
+header{
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0;
+    .brand{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $brand-color;
+    }
+
+    ul {
+        li{
+            margin-right: 2rem;
+            a{
+                font-size: 1rem;
+                font-weight: 500;
+                color: $brand-color;
+            }
+        }
+        .active{
+            color: $active-color;
+        }
+    }
+}

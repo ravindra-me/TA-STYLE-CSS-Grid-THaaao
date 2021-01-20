@@ -1,0 +1,21 @@
+footer{
+    padding:10rem 0;
+    color: $text-color;
+    p{
+        span{
+            color: $active-color;
+        }
+    }
+    nav{
+        margin: 2rem 0;
+    }
+    ul {
+        li{
+            margin: 0 2rem;
+        }
+        li a{
+            color: $i-tag-color;
+            font-size: 1.5rem;
+        }
+    }
+}
