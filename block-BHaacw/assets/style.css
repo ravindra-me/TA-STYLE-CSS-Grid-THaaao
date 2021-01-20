@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #3a4a4f;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-item-between {
+  justify-items: space-between;
+}
+
+.justify-item-center {
+  justify-items: center;
+}
+
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.width-70 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-border {
+  border-top: 3px solid #4997bf;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: white;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+header nav {
+  margin-top: 2rem;
+}
+
+header ul {
+  background-color: white;
+  padding: 1rem 0;
+  border-radius: 0.25rem;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+header ul li a {
+  color: #4997bf;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main .container {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  color: #4d5d63;
+  padding: 0 0.5rem;
+}
+
+main .hero {
+  padding: 2rem 0;
+}
+
+main article {
+  background: white;
+  border-radius: 0.25rem;
+  border-top: 2px solid #4997bf;
+}
+
+main article a, main article p {
+  padding: 0.5rem;
+}
+
+main article a {
+  display: inline-block;
+  color: tomato;
+}
+
+main article p {
+  margin: 0.25rem 0;
+  color: #4d5d63;
+}
+
+main .article-2 {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+main .article-2 .img-div {
+  text-align: center;
+}
+
+main .article-2 .img-div img {
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: 50%;
+}
+
+main .article-2 p {
+  margin-top: 1rem;
+}
+
+main .article-2 a {
+  margin-top: 5rem;
+}
+
+main .grid-left {
+  gap: 2rem;
+}
+
+main .grid-right {
+  gap: 2rem;
+}
+
+main .grid-right .article-4 a {
+  background-color: tomato;
+  display: block;
+  padding: 0.5rem 0.5rem;
+  color: white;
+}
+
+main .grid-right .article-5 h2 {
+  background-color: #4997bf;
+  color: white;
+}
+
+main .article-3 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+main .article-3 img {
+  width: 12.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  main .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  main .grid-right {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+  }
+  main .article-2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  header ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  main .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 0;
+  }
+  main .grid-right {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+main{
+  .container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+  h2{
+      font-size: 1.5rem;
+      color: $box-text-color;
+      padding: 0 0.5rem ;
+  }
+  .hero{
+      padding: 2rem 0;
+  }
+  article{
+      background: white;
+      border-radius: 0.25rem;
+      border-top: 2px solid $header-font-color;
+     a, p{
+          padding:  0.5rem;
+      }
+      a{
+          display: inline-block;
+          color: tomato;
+      }
+      p{
+          margin: 0.25rem 0;
+          color: $box-text-color;
+      }
+  }
+  .article-2{
+      align-self: stretch;
+      .img-div{
+          text-align: center;
+          img{
+              width: 18.75rem;
+              height: 18.75rem;
+              border-radius: 50%;
+          }
+      }
+      p{
+          margin-top: 1rem;
+      }
+      a{
+          margin-top: 5rem;
+      }
+  }
+  .grid-left{
+      gap:2rem;
+  }
+  .grid-right{
+      gap:2rem;
+      .article-4{
+          a{
+              background-color: tomato;
+              display: block;
+              padding: 0.5rem 0.5rem;
+              color: white;
+          }
+      }
+      .article-5{
+          h2{
+              background-color: $header-font-color;
+              color: white;
+          }
+      }
+  }
+  .article-3{
+      align-self: start;
+      img{
+          width: 12.5rem;
+      }
+  }
+}  

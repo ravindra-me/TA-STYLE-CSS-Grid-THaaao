@@ -1,0 +1,60 @@
+@import "./variable";
+@import "./reset";
+@import "./general";
+@import "./header";
+@import "./main";
+
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 10px;
+    }
+    .container{
+        width: 100%;
+    }
+    main {
+        .container{
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 0;
+            align-items: start;
+        }
+        .grid-right{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-template-rows: 2;
+        }
+        .article-2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+}
+
+@media screen and (max-width:580px){
+    html{
+        font-size: 10px;
+    }
+    .container{
+        width:100%;
+    }
+    header{
+        ul li {
+            a{
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+    main {
+        .container{
+            grid-template-columns: 1fr;
+            grid-row-gap: 2rem;
+            grid-column-gap:0 ;
+        }
+        .grid-right{
+            grid-column-start: 1;
+            grid-row-start: 3;
+        }
+    }
+}
