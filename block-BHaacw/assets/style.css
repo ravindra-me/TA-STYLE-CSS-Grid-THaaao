@@ -173,14 +173,11 @@ header ul li a {
 main .container {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   gap: 2rem;
 }
 
 main h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #4d5d63;
   padding: 0 0.5rem;
 }
@@ -196,7 +193,7 @@ main article {
 }
 
 main article a, main article p {
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 }
 
 main article a {
@@ -230,7 +227,7 @@ main .article-2 p {
 }
 
 main .article-2 a {
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 main .grid-left {
@@ -253,6 +250,12 @@ main .grid-right .article-5 h2 {
   color: white;
 }
 
+main .article-3 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
 main .article-3 img {
   width: 12.5rem;
 }
@@ -261,13 +264,55 @@ main .article-3 img {
   html {
     font-size: 10px;
   }
+  .container {
+    width: 100%;
+  }
   main .container {
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    gap: 2rem;
+  }
+  main .grid-right {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+  }
+  main .article-2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  header ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  main .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 0;
+  }
+  main .grid-right {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
   }
 }
 /*# sourceMappingURL=style.css.map */
