@@ -16,6 +16,9 @@ header{
                 font-weight: 500;
                 color: $brand-color;
             }
+            a:hover{
+                color: $active-color;
+            }
         }
         .active{
             color: $active-color;
