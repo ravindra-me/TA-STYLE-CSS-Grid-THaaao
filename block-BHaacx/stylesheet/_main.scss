@@ -46,6 +46,7 @@
 .skill{
     grid-template-columns: repeat(2,1fr);
     background-color: $active-color;
+    
     .skill-l{
         background:url("../assets/media/about-img.jpg") center no-repeat;
         background-size: cover;
@@ -83,6 +84,7 @@
 .interface-design{
     background: $active-color;
     color: white;
+    
     i{
         font-size: 3rem;
         margin-bottom: 1rem;
